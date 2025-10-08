@@ -73,4 +73,38 @@ Ricavi Totali = SUM('Order Items'[Ricavo])
 ```dax
 Ricavi PY = 
 CALCULATE(
-    SUM('Order Items'[Ric
+    SUM('Order Items'[Ricavo]), 
+    SAMEPERIODLASTYEAR(Calendario[Date])
+)
+```
+
+**Variazione Percentuale Ordini (YoY)**
+```dax
+Variazione % Ordini = 
+DIVIDE(
+    [Conteggio Ordini] - [Numero Ordini PY],
+    [Numero Ordini PY]
+)
+```
+
+## 📈 Dashboard & Insights
+
+Il report include visualizzazioni per analizzare:
+
+- **Trend temporali**: Evoluzione ordini e ricavi con confronto year-over-year
+- **Performance geografica**: Distribuzione vendite per stato/regione
+- **Qualità servizio**: Analisi rating consegne e recensioni clienti
+- **Categorie prodotto**: Performance per categoria merceologica
+
+### Key Findings
+
+- Crescita eccezionale 2016-2018 con tassi superiori al 20.000% YoY
+- Forte concentrazione geografica nel mercato brasiliano
+- Picchi stagionali significativi (novembre 2017: 8.665 ordini, 1,2M€ ricavi)
+- Momentum positivo mantenuto nel 2018 nonostante basi comparative elevate
+
+## 📝 Note
+
+- I dati coprono il periodo settembre 2016 - ottobre 2018
+- Alcune anomalie nei dati (es. crollo settembre 2018) richiedono ulteriore investigazione
+- Il report è ottimizzato per analisi year-over-year
