@@ -2,7 +2,7 @@
 
 ## 📊 Panoramica Progetto
 
-Report di Business Intelligence sviluppato in Power BI per l'analisi delle performance dell'e-commerce Olist Store. Il progetto analizza ordini, ricavi e qualità del servizio nel periodo 2016-2018, fornendo insights strategici sulle dinamiche di crescita del business.
+Report di Business Intelligence sviluppato in Power BI per l'analisi delle performance dell'e-commerce Olist Store. Il progetto analizza ordini, ricavi e qualità del servizio nel periodo 2016-2018, fornendo insights sulle dinamiche del business.
 
 ## 📁 Dataset Utilizzati
 
